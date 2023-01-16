@@ -88,4 +88,6 @@ echo
 echo
 echo
 
+python3 "${test_dir}/python-test.py" "$test_dir/tests" .
+
 exit $errors
