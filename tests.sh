@@ -29,7 +29,7 @@ for task in $tasks; do
 
 	correct_tests=0
 	echo "Compiler output:" >> $results
-	g++ fn*_d4_$task.cpp -o "$task.exe" -std=c++14 -Wpedantic &>> $results
+	g++ fn*_d1_$task.cpp -o "$task.exe" -std=c++14 -Wpedantic &>> $results
 
 	if [ $? -eq 0 ]; then
 		echo >> $results
